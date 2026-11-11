@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "prep-2027",
+      "date": "",
+      "category": "店舗情報",
+      "title": "2027年度の開業に向けて準備中です",
+      "body": "高知市高須で、修理・整備と自転車販売を行う予定です。",
+      "published": true
+    },
+    {
+      "id": "webshop-prep",
+      "date": "",
+      "category": "WEBショップ",
+      "title": "WEBショップの開設を準備しています",
+      "body": "完成車や自転車パーツなどを取り扱う予定です。",
+      "published": true
+    },
+    {
+      "id": "registration-prep",
+      "date": "",
+      "category": "サービス",
+      "title": "防犯登録の取扱いを準備中です",
+      "body": "取扱い開始時期などは、決まり次第ご案内します。",
+      "published": true
+    },
+    {
+      "id": "no-reservation",
+      "date": "",
+      "category": "ご来店案内",
+      "title": "ご来店は予約不要の予定です",
+      "body": "営業日と営業時間は、営業日カレンダーをご確認ください。",
+      "published": true
+    }
+  ]
+}

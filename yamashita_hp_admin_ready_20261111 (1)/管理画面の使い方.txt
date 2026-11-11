@@ -1,0 +1,42 @@
+やました自転車工房 ホームページ・管理画面付き
+================================================
+
+【初回】
+ZIPを解凍し、GitHub の yamashita-cycle/yamashita-bicycle リポジトリの
+main ブランチ直下へ、ZIP内のファイルをアップロードします。
+既存ファイルは同名で上書きし、Commit changes を押します。
+
+公開HP：
+https://yamashita-cycle.github.io/yamashita-bicycle/
+
+専用管理画面：
+https://yamashita-cycle.github.io/yamashita-bicycle/admin.html
+
+【普段の管理】
+1. admin.html を開く
+2. 営業日：カレンダーの日付を押し、昼間・夜間・休業・未定から選ぶ
+3. お知らせ：タイトルと本文を入力、登録・編集・並び替え・非公開が可能
+4. 「公開・更新」から、変更したJSONファイルをダウンロード
+5. GitHub の「Add file」→「Upload files」でJSONを上書き、Commit changes
+これだけで公開サイトにも反映されます。index.html の変更は不要です。
+
+【直接GitHubに公開する場合（任意・上級者向け）】
+・GitHub の設定から Fine-grained Personal Access Token を作成
+・Repository access：Only select repositories → yamashita-bicycle のみ
+・Repository permissions：Contents → Read and write
+・管理画面の「GitHubから最新データを読み込む」を実行
+・編集したら「GitHubに直接公開」で保存
+・トークンは管理画面にもファイルにも保存しません。入力するのは毎回です。
+・トークンは短い期限にし、第三者に見せないでください。
+
+【重要な注意】
+・admin.html のURL自体は公開です。ログイン画面ではありません。
+・誰でも編集画面を表示できますが、管理画面を見るだけで公開HPは変更できません。
+・GitHubへの書き込みにはリポジトリの権限が必要です。
+・別の第三者が操作した内容は公開されません（GitHub保存が必須）。
+・GitHubのアクセストークンをリポジトリに書き込んだり、他人に共有しないでください。
+・管理画面のボタンで設定した変更は、自動では公開されません。
+・公開HPのカレンダーは schedule.json を、お知らせは news.json を読み込みます。
+・店舗の既存画像・TOP・WEBショップバナー・営業時間のデザインは保持しています。
+
+2026年11月11日
