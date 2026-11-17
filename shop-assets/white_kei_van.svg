@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="135" viewBox="0 0 240 135" role="img" aria-label="白い軽箱バン">
+<defs><linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e8edf0"/></linearGradient></defs>
+<ellipse cx="122" cy="117" rx="102" ry="9" fill="#a4b6b1" opacity=".22"/>
+<path d="M27 30 Q27 19 40 19 H155 Q169 19 176 30 L195 42 Q204 47 207 57 L213 97 Q213 105 205 105 H24 Q16 105 16 97 V43 Q16 30 27 30 Z" fill="url(#body)" stroke="#8c9da4" stroke-width="3"/>
+<path d="M29 35 H145 V64 H29 Z" fill="#dcebef" stroke="#9bb2ba" stroke-width="2"/>
+<path d="M157 35 Q168 35 176 45 L190 63 H157 Z" fill="#9bc7dc" stroke="#718c9a" stroke-width="2"/>
+<path d="M147 26 V98" stroke="#b7c4ca" stroke-width="3"/><path d="M102 33 V95" stroke="#c8d1d4" stroke-width="2"/>
+<path d="M160 74 H182" stroke="#8f9a9c" stroke-width="3" stroke-linecap="round"/>
+<path d="M201 72 H214 V87 H201" fill="#f3f5f6" stroke="#8f9fa6" stroke-width="2"/>
+<rect x="208" y="91" width="12" height="6" rx="2" fill="#f4cc20"/>
+<path d="M15 83 H28" stroke="#d24c3c" stroke-width="5"/><rect x="196" y="78" width="7" height="8" rx="1" fill="#f4e39a"/>
+<path d="M32 98 H196" stroke="#8e9aa1" stroke-width="3"/>
+<circle cx="62" cy="105" r="19" fill="#29343a"/><circle cx="62" cy="105" r="11" fill="#c3cdd1"/><circle cx="62" cy="105" r="5" fill="#eff3f4"/>
+<circle cx="180" cy="105" r="19" fill="#29343a"/><circle cx="180" cy="105" r="11" fill="#c3cdd1"/><circle cx="180" cy="105" r="5" fill="#eff3f4"/>
+</svg>
