@@ -554,6 +554,43 @@ body{background:#fbfaf6}
   .about-clean-copy p:last-child{margin-bottom:0 !important;}
 }
 
+
+/* Reliable mobile-only cards: inline vector graphics and flowing text (no cropped raster art). */
+.mobile-stable-services{display:none}
+@media(max-width:700px){
+ .services-picture .services-picture-desktop{display:none!important}
+ .services-picture .mobile-stable-services{display:block!important;box-sizing:border-box;width:100%;min-width:0;max-width:100%;background:#fff;border:1px solid #e3e8e1;border-radius:16px;padding:21px 12px 14px;box-shadow:0 4px 18px #153b2410;overflow:visible}
+ .mobile-stable-services h2{font-size:clamp(18px,5.3vw,23px);line-height:1.4;margin:0 0 17px;color:#263d30;text-align:center;font-weight:850}
+ .mobile-stable-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;min-width:0;width:100%;box-sizing:border-box}
+ .mobile-stable-service{min-width:0;box-sizing:border-box;min-height:121px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:13px 6px;border:1px solid #e6eae4;background:#f8faf6;border-radius:13px;text-align:center}
+ .mobile-stable-service:nth-child(2){background:#f3f8fc}
+ .mobile-stable-service:nth-child(3){background:#fff9ec}
+ .mobile-stable-service:nth-child(4){background:#f9f5f7}
+ .stable-service-icon{display:block;width:43px;height:43px;color:#2e6c52}
+ .mobile-stable-service:nth-child(2) .stable-service-icon{color:#487c99}
+ .mobile-stable-service:nth-child(3) .stable-service-icon{color:#947134}
+ .mobile-stable-service:nth-child(4) .stable-service-icon{color:#856d87}
+ .stable-service-icon svg{display:block;width:100%;height:100%;overflow:visible}
+ .mobile-stable-service strong{color:#2d4134;font-size:clamp(12px,3.6vw,16px);line-height:1.4;white-space:nowrap}
+ .mobile-stable-note{background:#fff2c7;color:#56451e;border-radius:11px;margin:14px 0 0;padding:12px 8px;text-align:center;font-size:clamp(12px,3.35vw,15px);line-height:1.5;font-weight:800}
+ .repair-illustration{box-sizing:border-box;width:auto!important;max-width:none!important;margin:23px 12px 29px!important;padding:0!important;min-width:0!important;overflow:visible!important}
+ .repair-illustration .repair-illustration-pc{display:none!important}
+ .repair-illustration .mobile-stable-repair{display:block!important;box-sizing:border-box;width:100%!important;max-width:100%!important;min-width:0!important;overflow:visible!important}
+ .mobile-stable-repair h2{font-size:clamp(21px,5.8vw,25px);font-weight:850;color:#263d30;margin:24px 2px 14px;text-align:left;line-height:1.35}
+ .mobile-stable-route-list,.mobile-stable-step-list{box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;min-width:0;width:100%}
+ .mobile-stable-info-card{box-sizing:border-box;display:flex;align-items:center;gap:14px;min-width:0;width:100%;max-width:100%;background:#fff;border:1px solid #dfe7df;border-radius:15px;padding:18px 14px;box-shadow:0 3px 12px #193a220d}
+ .mobile-stable-graphic{box-sizing:border-box;display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;height:48px;border-radius:12px;background:#e9f3ed;color:#2d6b4f}
+ .mobile-stable-info-card:nth-child(even) .mobile-stable-graphic{background:#ebf3f8;color:#467b98}
+ .mobile-stable-graphic svg{display:block;width:32px;height:32px;overflow:visible}
+ .mobile-stable-card-copy{flex:1 1 0;min-width:0;overflow-wrap:anywhere;word-break:normal}
+ .mobile-stable-card-copy h3{font-size:clamp(15px,4.3vw,18px);color:#22392c;line-height:1.4;font-weight:850;margin:0 0 5px}
+ .mobile-stable-card-copy p{font-size:clamp(12px,3.45vw,14px);line-height:1.7;color:#526358;margin:0;white-space:normal}
+ .mobile-stable-step{gap:10px;padding:14px 11px}
+ .mobile-stable-number{flex:0 0 31px;display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:#2e7654;color:#fff;font-size:16px;font-weight:850}
+ .mobile-stable-step .mobile-stable-graphic{flex-basis:37px;width:37px;height:37px;border-radius:10px}
+ .mobile-stable-step .mobile-stable-graphic svg{width:27px;height:27px}
+}
+
 </style>
 </head><body>
 <div class="page">
@@ -564,16 +601,8 @@ body{background:#fbfaf6}
 <div class="status-note">※出張修理は開業準備中です。受付開始後にご案内します。</div>
 <section class="services-picture" aria-label="こんな時にご利用ください！">
 <img class="services-picture-desktop services-desktop-original" src="visit-assets/services_banner_approved_v2.png" alt="こんな時にご利用ください！ パンク修理、ブレーキ調整、チェーン調整、その他の修理。持ち込みが難しい自転車もご相談ください！" loading="lazy" decoding="async">
-<div class="services-icons-fixed services-mobile-only" aria-label="こんな時にご利用ください！">
-  <div class="services-icons-content">
-    <h2>こんな時にご利用ください！</h2>
-    <div class="fixed-service-grid"><div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="パンク修理"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="12"/><path d="M32 10v10M32 44v10M10 32h10M44 32h10"/><path d="M43 14l7-7M45 7h5v5"/></svg><strong>パンク修理</strong></div>
-<div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="ブレーキ調整"><path d="M11 20h42M18 20v16M46 20v16"/><path d="M18 36c0 9 5 15 14 15s14-6 14-15"/><path d="M11 14h12M41 14h12"/><path d="M24 20l-6-8M40 20l6-8"/></svg><strong>ブレーキ調整</strong></div>
-<div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="チェーン調整"><rect x="7" y="18" width="34" height="19" rx="9.5" transform="rotate(-30 24 28)"/><rect x="23" y="27" width="34" height="19" rx="9.5" transform="rotate(-30 40 37)"/><path d="M26 34l12-7"/></svg><strong>チェーン調整</strong></div>
-<div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="その他の修理"><path d="M22 10a14 14 0 0 0 17 17L54 42l-12 12-15-15A14 14 0 0 1 10 22l10 10 10-10-10-10Z"/></svg><strong>その他の修理</strong></div></div>
-    <p class="fixed-service-note">持ち込みが難しい自転車もご相談ください！</p>
-  </div>
-</div>
+<div class="mobile-stable-services services-mobile-only" aria-label="こんな時にご利用ください！">
+<h2>こんな時にご利用ください！</h2><div class="mobile-stable-grid"><div class="mobile-stable-service"><span class="stable-service-icon"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="6"/><path d="M24 7v11M24 30v11M7 24h11M30 24h11"/></svg></span><strong>パンク修理</strong></div><div class="mobile-stable-service"><span class="stable-service-icon"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v8c0 4 3 7 7 7h10c4 0 7-3 7-7V8"/><path d="M12 13H8v12m28-12h4v12"/><path d="M12 31l6-5m18 5-6-5"/><path d="M19 23l-2 11m12-11 2 11"/></svg></span><strong>ブレーキ調整</strong></div><div class="mobile-stable-service"><span class="stable-service-icon"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="16" width="24" height="15" rx="7.5" transform="rotate(-35 16 23.5)"/><rect x="20" y="16" width="24" height="15" rx="7.5" transform="rotate(-35 32 23.5)"/><path d="M19 28l10-7"/></svg></span><strong>チェーン調整</strong></div><div class="mobile-stable-service"><span class="stable-service-icon"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M31 8a12 12 0 0 0-13 15L6 35a5 5 0 0 0 7 7l12-12A12 12 0 0 0 40 17l-7 7-9-9 7-7Z"/></svg></span><strong>その他の修理</strong></div></div><p class="mobile-stable-note">持ち込みが難しい自転車もご相談ください！</p></div>
 </section>
 <section class="about-clean" aria-labelledby="about-visit-heading">
 <h2 class="about-clean-heading" id="about-visit-heading"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="13" height="9" rx="1.3"/><path d="M15 11h3l4 4v2h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18.5" cy="18" r="2"/><path d="M5 12h7"/></svg><span>出張修理について</span></h2>
@@ -585,20 +614,8 @@ body{background:#fbfaf6}
 </section>
 <section class="repair-illustration" aria-label="対応内容とご利用の流れ">
   <img class="repair-illustration-pc" src="visit-assets/repair_info_approved.png" alt="対応内容：現地での修理・引き取り修理。ご利用の流れ：1 ご相談・受付、2 訪問日時の確認、3 出張修理、4 修理・お支払い。" loading="lazy" decoding="async">
-  <div class="repair-illustration-mobile" aria-label="対応内容とご利用の流れ（スマホ表示）">
-    <h2 class="mobile-section-heading">対応内容</h2>
-    <div class="mobile-route-cards">
-      <img src="visit-assets/mobile_route_on_site.png" alt="現地での修理：その場で対応できる修理は現地で作業します。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_route_pickup.png" alt="引き取り修理：現地での修理が難しい場合は、自転車をお預かりして工房で修理し、後日お届けします。" loading="lazy" decoding="async">
-    </div>
-    <h2 class="mobile-section-heading">ご利用の流れ</h2>
-    <div class="mobile-steps-cards">
-      <img src="visit-assets/mobile_step_1.png" alt="1 ご相談・受付：受付開始後に症状や訪問場所をお伺いします。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_step_2.png" alt="2 訪問日時の確認：日時・場所・作業内容と料金を確認します。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_step_3.png" alt="3 出張修理：ご指定の場所へ伺い修理します。必要に応じて引き取りにも対応します。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_step_4.png" alt="4 修理・お支払い：状態と作業内容をご確認いただき、お支払いとなります。" loading="lazy" decoding="async">
-    </div>
-  </div>
+  <div class="repair-illustration-mobile mobile-stable-repair" aria-label="対応内容とご利用の流れ（スマホ表示）">
+<h2>対応内容</h2><div class="mobile-stable-route-list"><article class="mobile-stable-info-card"><span class="mobile-stable-graphic"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="35" r="8"/><circle cx="38" cy="35" r="8"/><path d="m10 35 10-20 8 20H10m18 0 10-17H26m-6-3h9m-11 0-3-4"/></svg></span><div class="mobile-stable-card-copy"><h3>現地での修理</h3><p>その場で対応できる修理は、現地で作業します。</p></div></article><article class="mobile-stable-info-card"><span class="mobile-stable-graphic"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="12" width="27" height="23" rx="2"/><path d="M29 20h9l8 9v6H29"/><circle cx="11" cy="36" r="4"/><circle cx="38" cy="36" r="4"/><path d="M7 18h16M7 23h16"/></svg></span><div class="mobile-stable-card-copy"><h3>引き取り修理</h3><p>現地での修理が難しい場合は、自転車をお預かりして工房で修理し、後日お届けします。</p></div></article></div><h2>ご利用の流れ</h2><div class="mobile-stable-step-list"><article class="mobile-stable-info-card mobile-stable-step"><span class="mobile-stable-number">1</span><span class="mobile-stable-graphic"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6h8l4 10-6 5a31 31 0 0 0 9 9l5-6 10 4v8c0 4-3 6-7 6C21 42 6 27 6 13c0-4 2-7 6-7Z"/></svg></span><div class="mobile-stable-card-copy"><h3>ご相談・受付</h3><p>受付開始後に、症状や訪問場所をお伺いします。</p></div></article><article class="mobile-stable-info-card mobile-stable-step"><span class="mobile-stable-number">2</span><span class="mobile-stable-graphic"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="11" width="36" height="31" rx="4"/><path d="M6 20h36M15 6v10M33 6v10M15 28h5m8 0h5m-18 7h5"/></svg></span><div class="mobile-stable-card-copy"><h3>訪問日時の確認</h3><p>日時・場所・作業内容と料金を確認します。</p></div></article><article class="mobile-stable-info-card mobile-stable-step"><span class="mobile-stable-number">3</span><span class="mobile-stable-graphic"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6a11 11 0 0 0 10 16l17 17a5 5 0 0 0 7-7L29 15A11 11 0 0 0 12 6Z"/><path d="M6 42 21 27m14-21 7 7m-2-9-9 9"/></svg></span><div class="mobile-stable-card-copy"><h3>出張修理</h3><p>ご指定の場所へ伺い修理します。（または引き取り対応）</p></div></article><article class="mobile-stable-info-card mobile-stable-step"><span class="mobile-stable-number">4</span><span class="mobile-stable-graphic"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="11" width="36" height="26" rx="4"/><path d="M6 19h36M12 28h10m-10 5h6"/><circle cx="35" cy="33" r="9" fill="#fff"/><path d="m31 33 3 3 6-7"/></svg></span><div class="mobile-stable-card-copy"><h3>修理・お支払い</h3><p>状態と作業内容をご確認いただき、お支払いとなります。</p></div></article></div></div>
 </section>
 <div class="details"><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg> 対応エリア</h2><strong>高知市・南国市・香南市</strong><p>土佐市・香美市・芸西村・安芸市は<strong class="reservation-inline">要予約</strong>で対応します。</p><p class="small">※訪問日時・詳細な対応範囲はご依頼時にご案内します。</p></section><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 7 4 6 4-6m-4 6v5m-4-5h8m-8 3h8"/></svg> 出張料金</h2><strong>500円～</strong><p>出張料金は、修理工賃・部品代とは別にかかります。</p><p class="small">※訪問先や作業内容によって料金が異なります。作業前にご案内します。</p></section></div>
 <section class="faq-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 3-3 2-3 5m0 3h.01"/></svg> よくあるご質問</h2><details><summary>どんな修理ができますか？</summary><p>パンク修理・ブレーキ調整・チェーン調整などに対応します。現地での修理が難しい場合は、お預かりして工房で修理します。</p></details><details><summary>事前予約は必要ですか？</summary><p>通常の出張修理は事前にご相談ください。外出先での故障などお急ぎの場合は、できるだけ早く現地へお伺いし、修理できるよう対応します。ただし、訪問状況や場所によってはお時間をいただく場合があります。店舗へのご来店は予約不要です。</p></details><details><summary>出張料金はいくらですか？</summary><p>出張料金は500円からです。修理工賃・部品代とは別にかかり、訪問先や作業内容によって異なります。作業前に料金をご案内します。</p></details></section>
