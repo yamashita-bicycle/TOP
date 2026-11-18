@@ -217,6 +217,72 @@ img{max-width:100%}
  .header{padding:10px 8px}.header .brand-logo{width:35px;height:40px}.header .brand{gap:6px}.header .brand b{font-size:14px}.header .brand small{font-size:8px}.header-actions{gap:4px}.home-link{padding:6px!important;font-size:10px!important}
  .mobile-services-grid{gap:2px}.mobile-services-tile{padding:10px 0}.mobile-services-tile b{font-size:9px}
 }
+
+/* 2026-11-18: readability pass — reduce solid green panels while retaining green accents. */
+body{color:#26302a;background:#fafbf8}
+.page{background:#fff}
+.about-clean{background:#fff;border:1px solid #e3e8df;box-shadow:0 3px 12px #1b35210a}
+.about-clean-heading{background:#f2f6eb;color:#205439;border:1px solid #cbdcc4;box-shadow:none}
+.about-clean-copy{max-width:760px;color:#303a32}
+.about-clean-copy p{font-weight:500;font-size:clamp(16px,1.55vw,20px);line-height:1.85;letter-spacing:.025em;text-wrap:pretty;overflow-wrap:normal;word-break:normal;margin:0 0 15px}
+.about-clean-copy p:last-child{margin-bottom:0}
+.repair-illustration-mobile .mobile-section-heading{color:#293c32;font-weight:800}
+.pill-title{background:#eaf2e7;color:#28513b;box-shadow:none;border:1px solid #d6e4d4}
+.detail-box{border-color:#e4ebe0;box-shadow:0 2px 9px #153e2010}
+.detail-box strong{color:#253a2e}
+.faq-box{background:#fafbf8;border:1px solid #e5ece2;box-shadow:none}
+.faq-box summary{color:#2c3a30}
+.mobile-services-note{background:#fff2ae!important;color:#34422f!important}
+.mobile-services-tile{color:#2d5440!important}
+.footer{background:#edf2ea;color:#385345;border-top:1px solid #e1e8dc}
+.bottom-phone-panel{margin:26px 26px 20px;padding:20px 18px;background:#fffdf7;border:1px solid #dfe7db;border-radius:18px;text-align:center;box-shadow:0 2px 10px #153e2010}
+.bottom-phone-title{color:#374b3d;font-weight:800;font-size:17px;margin:0 0 10px}
+.bottom-phone-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;color:#fff;background:#176746;border-radius:12px;min-height:54px;padding:12px 24px;font-size:clamp(18px,4.8vw,25px);font-weight:800;letter-spacing:.02em}
+.bottom-phone-button:hover{background:#105238}
+.bottom-phone-button svg{width:22px;height:22px;flex:none}
+.bottom-phone-hint{color:#617067;font-size:12px;margin:9px 0 0}
+@media(max-width:700px){
+ .about-clean{margin:20px 12px 26px;padding:15px 15px 19px}
+ .about-clean-heading{font-size:19px;line-height:1.4;padding:11px 12px;margin:0 0 17px}
+ .about-clean-copy{max-width:32em;margin:0 auto;padding:0 2px}
+ .about-clean-copy p{font-size:15px!important;line-height:1.9!important;letter-spacing:0!important;font-weight:500!important;margin-bottom:17px!important;text-align:left;text-wrap:pretty}
+ .about-clean-copy p:last-child{margin-bottom:0!important}
+ .bottom-phone-panel{margin:24px 12px 18px;padding:18px 12px}
+ .bottom-phone-button{width:100%;max-width:350px}
+ .faq-box{background:#fff;border:1px solid #e5ece2}
+}
+
+/* 3-point refinement: restrained colors, accessible lower call action, stable heading. */
+:root{--deep:#273c31;--green:#406a50;--line:#dbe2db;--muted:#505a52;--shadow:0 3px 12px #232f2610}
+.notice{background:#f4f3e9;color:#3c4b40;border-bottom:1px solid #e7e9dd}
+.hero-title,.hero-title strong{color:#234b35}
+.hero-tags span{background:#fff0a8;color:#38402c}
+.services-box,.route-box,.steps-box,.detail-box{border-color:#e0e5df;box-shadow:0 3px 12px #27362c0c}
+.service-tile,.mobile-services-tile{color:#35473a;background:#fff}
+.service-tile svg,.route svg,.step-icon{color:#48765b}
+.service-strap,.route h3{color:#304c39}
+.step-number{background:#526e58}
+.faq-box summary:before{background:#647665}
+.call-link-top{background:#fff;border-color:#cbd8cb;color:#294b35}
+.call-link-top:hover,.home-link:hover{background:#f7f8f3}
+.about-clean-heading{
+  display:flex;flex-wrap:nowrap;white-space:nowrap;
+  width:max-content;max-width:100%;margin-left:auto;margin-right:auto;
+  background:#f3f5f0;color:#253d30;border:1px solid #d8e0d5;
+  letter-spacing:0;gap:10px
+}
+.about-clean-heading svg{width:26px;height:26px;flex:0 0 26px}
+.about-clean-heading span{display:inline-block;white-space:nowrap;word-break:keep-all}
+.about-clean-card,.about-mobile-card{background:#f8f9f5}
+.about-mobile-heading{background:#536f58}
+.bottom-phone-panel{background:#fff;border-color:#dce2d9}
+.bottom-phone-button{background:#305a43;color:#fff}
+.bottom-phone-button:hover{background:#234934}
+@media(max-width:700px){
+  .about-clean-heading{font-size:clamp(16px,5vw,19px);gap:8px;padding:10px 12px}
+  .about-clean-heading svg{width:22px;height:22px;flex-basis:22px}
+}
+
 </style>
 </head><body>
 <div class="page">
@@ -264,6 +330,7 @@ img{max-width:100%}
 </section>
 <div class="details"><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg> 対応エリア</h2><strong>高知市・南国市・香南市</strong><p>土佐市・香美市・芸西村・安芸市は<strong class="reservation-inline">要予約</strong>で対応します。</p><p class="small">※訪問日時・詳細な対応範囲はご依頼時にご案内します。</p></section><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 7 4 6 4-6m-4 6v5m-4-5h8m-8 3h8"/></svg> 出張料金</h2><strong>500円～</strong><p>出張料金は、修理工賃・部品代とは別にかかります。</p><p class="small">※訪問先や作業内容によって料金が異なります。作業前にご案内します。</p></section></div>
 <section class="faq-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 3-3 2-3 5m0 3h.01"/></svg> よくあるご質問</h2><details><summary>どんな修理ができますか？</summary><p>パンク修理・ブレーキ調整・チェーン調整などに対応します。現地での修理が難しい場合は、お預かりして工房で修理します。</p></details><details><summary>事前予約は必要ですか？</summary><p>通常の出張修理は事前にご相談ください。外出先での故障などお急ぎの場合は、できるだけ早く現地へお伺いし、修理できるよう対応します。ただし、訪問状況や場所によってはお時間をいただく場合があります。店舗へのご来店は予約不要です。</p></details><details><summary>出張料金はいくらですか？</summary><p>出張料金は500円からです。修理工賃・部品代とは別にかかり、訪問先や作業内容によって異なります。作業前に料金をご案内します。</p></details></section>
+<section class="bottom-phone-panel" aria-label="お電話でのお問い合わせ"><p class="bottom-phone-title">お電話でのお問い合わせ</p><a class="bottom-phone-button" href="tel:07047817655" aria-label="070-4781-7655 に電話をかける"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.35 1.78.68 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.29a2 2 0 0 1 2.11-.45c.84.33 1.72.56 2.62.68A2 2 0 0 1 22 16.92z"/></svg>070-4781-7655</a><p class="bottom-phone-hint">番号をタップすると電話をかけられます</p></section>
 <div class="cta-row"><a class="cta-link main-link" href="https://yamashita-bicycle.github.io/TOP/"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 9-8 9 8v10H3z"/><path d="M9 21v-8h6v8"/></svg> 公式HPへ戻る</a><a class="cta-link" href="https://yamashita-bicycle.github.io/TOP/#news"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></svg> 最新のお知らせを見る</a></div>
 <p class="footnote">※掲載している車両・出張修理風景はイメージです。出張修理は受付開始に向けて準備中です。詳細な対応範囲やご依頼方法は受付時にご案内します。</p>
 <footer class="footer">© やました自転車工房｜高知市高須</footer>
