@@ -534,6 +534,26 @@ body{background:#fbfaf6}
   }
 }
 
+
+/* WEB(PC) only: improve readability in 出張修理について text and prevent awkward wraps */
+@media (min-width: 701px){
+  .about-clean{
+    padding:14px clamp(22px,3vw,42px) 24px !important;
+  }
+  .about-clean-copy{
+    max-width:1040px;
+    margin:0 auto;
+  }
+  .about-clean-copy p{
+    font-size:clamp(17px,1.35vw,22px) !important;
+    line-height:1.85 !important;
+    letter-spacing:.01em;
+    white-space:nowrap;
+    margin:0 0 14px !important;
+  }
+  .about-clean-copy p:last-child{margin-bottom:0 !important;}
+}
+
 </style>
 </head><body>
 <div class="page">
