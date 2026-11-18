@@ -352,6 +352,35 @@ body{background:#fbfaf6}
   .about-clean-heading{background:#eaf4fa}
 }
 
+
+/* Requested yellow region and fee headings */
+.details .detail-box .pill-title{
+  background:#ffdc55!important;color:#463918!important;
+  border:1px solid #e7be3c!important;box-shadow:0 2px 7px #8e6a1d18!important
+}
+.details .detail-box .pill-title svg{color:#463918!important}
+/* Replace raster service icons with crisp SVG icons on mobile and desktop */
+.services-picture .services-picture-desktop{display:none!important}
+.services-picture .services-picture-mobile{
+ display:block!important;background:#fff!important;
+ border:1px solid #e1e6df!important;border-radius:17px!important;
+ padding:18px 16px!important;box-shadow:0 3px 12px #173d2e12!important
+}
+.services-picture .mobile-services-heading{color:#314d40!important}
+.services-picture .mobile-services-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px!important}
+.services-picture .mobile-services-tile{background:#fffaf0;border:1px solid #eadfc9;min-height:115px}
+.services-picture .mobile-services-tile:nth-child(2){background:#f0f9ff;border-color:#d9e8f2}
+.services-picture .mobile-services-tile:nth-child(3){background:#f5f8ed;border-color:#e2e8d3}
+.services-picture .mobile-services-tile:nth-child(4){background:#fff3f1;border-color:#f0dcd7}
+.services-picture .mobile-services-tile svg{stroke:#375f51!important;display:block!important;flex:none!important;max-width:48px}
+.services-picture .mobile-services-note{color:#3c5547!important}
+@media(max-width:700px){
+ .services-picture .services-picture-mobile{padding:14px 10px 12px!important}
+ .services-picture .mobile-services-grid{gap:5px!important}
+ .services-picture .mobile-services-tile{min-height:90px;padding:9px 2px!important}
+ .services-picture .mobile-services-tile svg{max-width:36px}
+}
+
 </style>
 </head><body>
 <div class="page">
@@ -364,10 +393,10 @@ body{background:#fbfaf6}
 <div class="services-picture-mobile" aria-label="出張修理のご相談例">
   <div class="mobile-services-heading">＼ こんな時にご利用ください！ ／</div>
   <div class="mobile-services-grid">
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="3"/><path d="M24 7v14m0 6v14M7 24h14m6 0h14M12 12l10 10m4 4 10 10m0-24L26 22m-4 4L12 36"/></svg><b>パンク修理</b></div>
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 38V18a10 10 0 0 1 20 0v20M14 22H7v14h7m20-14h7v14h-7M24 8V4M11 31h6m14 0h6"/><circle cx="24" cy="18" r="3"/></svg><b>ブレーキ調整</b></div>
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="18" width="22" height="12" rx="6" transform="rotate(-38 16 24)"/><rect x="21" y="18" width="22" height="12" rx="6" transform="rotate(-38 32 24)"/></svg><b>チェーン調整</b></div>
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10 6 7 7-4 4-7-7a9 9 0 0 0 11 11l19 19 5-5-19-19A9 9 0 0 0 10 6Z"/><path d="m30 16 6-6 4 4-6 6M26 22l-4 4M9 40l13-13"/></svg><b>その他の修理</b></div>
+    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="4"/><path d="M24 7v13M24 28v13M7 24h13M28 24h13M12 12l9 9m6 6 9 9m0-24-9 9m-6 6-9 9"/></svg><b>パンク修理</b></div>
+    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="7"/><path d="M24 8v9m0 14v9M8 24h9m14 0h9"/><path d="M6 14h7v20H6M35 14h7v20h-7"/></svg><b>ブレーキ調整</b></div>
+    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="16" width="26" height="16" rx="8" transform="rotate(-35 16 24)"/><rect x="19" y="16" width="26" height="16" rx="8" transform="rotate(-35 32 24)"/><path d="M19 26l10-7"/></svg><b>チェーン調整</b></div>
+    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 7a10 10 0 0 0 12 12L39 36l-5 5-17-17A10 10 0 0 1 10 7Z"/><path d="M30 13l6-6 5 5-6 6M22 26l-13 13"/></svg><b>その他の修理</b></div>
   </div>
   <p class="mobile-services-note">持ち込みが難しい自転車もご相談ください！</p>
 </div>
