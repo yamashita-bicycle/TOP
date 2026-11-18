@@ -496,6 +496,44 @@ body{background:#fbfaf6}
   .footer{background:#092940!important;color:#fff!important}
 }
 
+
+/* unify area + fee cards on both desktop and mobile */
+.details .detail-box,
+.details .detail-box:first-child,
+.details .detail-box:last-child{
+  background:#f5e9a9 !important;
+  border:2px solid #e0bc4c !important;
+  box-shadow:0 4px 14px rgba(177,135,32,.12) !important;
+}
+.details .detail-box strong,
+.details .detail-box p,
+.details .detail-box .small{color:#4f4222 !important;}
+.detail-box p .reservation-inline{color:#0b7048 !important;}
+.details .detail-box .pill-title,
+.details .detail-box:first-child .pill-title,
+.details .detail-box:last-child .pill-title{
+  background:#f3e08a !important;
+  color:#463918 !important;
+  border:1px solid #d9b236 !important;
+  box-shadow:none !important;
+}
+.details .detail-box .pill-title svg{color:#463918 !important;}
+@media(max-width:600px){
+  .details .detail-box,
+  .details .detail-box:first-child,
+  .details .detail-box:last-child{
+    background:#f5e9a9 !important;
+    border:2px solid #e0bc4c !important;
+  }
+  .details .detail-box .pill-title,
+  .details .detail-box:first-child .pill-title,
+  .details .detail-box:last-child .pill-title{
+    background:#f3e08a !important;
+    color:#463918 !important;
+    border:1px solid #d9b236 !important;
+  }
+}
+
 </style>
 </head><body>
 <div class="page">
