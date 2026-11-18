@@ -691,6 +691,48 @@ body{background:#fbfaf6}
   .mobile-reference-root footer{text-align:center;background:#0a5a3c;color:#fff;font-size:11px;padding:17px 10px}
 }
 
+
+/* Move mobile fee price to the right highlighted position */
+@media(max-width:700px){
+  .ref-fee-grid{align-items:stretch!important}
+  .ref-fee-card:last-child{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    grid-template-areas:
+      "title price"
+      "body body"
+      "note note";
+    column-gap:12px!important;
+    row-gap:2px!important;
+    align-items:start!important;
+    padding:5px 7px 5px 14px!important;
+  }
+  .ref-fee-card:last-child h2{
+    grid-area:title!important;
+    margin:0 0 6px!important;
+    align-self:center!important;
+  }
+  .ref-fee-card:last-child > strong{
+    grid-area:price!important;
+    justify-self:end!important;
+    align-self:center!important;
+    margin:0!important;
+    font-size:clamp(28px,10vw,46px)!important;
+    line-height:1!important;
+    letter-spacing:-.03em!important;
+    white-space:nowrap!important;
+    text-align:right!important;
+    color:#7b4f00!important;
+  }
+  .ref-fee-card:last-child p{
+    grid-area:body!important;
+    margin:2px 0 4px!important;
+  }
+  .ref-fee-card:last-child small{
+    grid-area:note!important;
+  }
+}
+
 </style>
 </head><body>
 <div class="page">
