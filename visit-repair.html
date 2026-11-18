@@ -430,6 +430,86 @@ body{background:#fbfaf6}
  .services-picture .services-mobile-only{display:block!important;max-width:100%;margin:0!important;padding:0!important}
  .services-picture .services-mobile-only .services-icons-content{display:block}
 }
+
+/* MOBILE-ONLY DESIGN SYSTEM. Desktop rules are not touched. */
+@media (max-width:700px){
+  :root{--mobile-ink:#23342c;--mobile-accent:#285f48;--mobile-sub:#64746a;--mobile-line:#e6e9e4;--mobile-paper:#fafaf7}
+  body{background:var(--mobile-paper)!important;color:var(--mobile-ink)}
+  .page{box-shadow:none;background:var(--mobile-paper)}
+  .notice{background:#fff3d7!important;color:#655025!important;border-bottom:1px solid #f1e6cf!important;padding:8px 12px!important;font-size:11px!important;letter-spacing:.015em}
+  .header{background:#fff!important;padding:13px 15px!important;min-height:76px!important;gap:8px!important;border-bottom:1px solid #e9eee7}
+  .header .brand{gap:8px!important}
+  .header .brand-logo{width:41px!important;height:48px!important}
+  .header .brand-text{padding-left:8px!important;border-color:#d6e4da}
+  .header .brand b{font-size:clamp(13px,3.7vw,17px)!important;color:#18372b!important;letter-spacing:-.04em;line-height:1.35}
+  .header .brand small{font-size:8px!important;color:#6e756e}
+  .call-link-top{background:#245a42!important;color:white!important;border:0!important;border-radius:13px!important;min-height:48px!important;padding:10px 12px!important;box-shadow:0 4px 10px #214f3926!important;font-size:14px!important}
+  .call-link-top svg{width:19px!important;height:19px!important}
+  .hero-approved{background:white;padding:0}
+  .hero-approved img{display:block;width:100%;height:auto}
+  .status-note{background:#f8f2e2!important;color:#6c5735!important;font-size:11px!important;line-height:1.5;padding:10px 16px!important}
+  .services-picture{background:var(--mobile-paper)!important;padding:27px 16px 9px!important}
+  .services-picture .services-icons-fixed{margin:0!important}
+  .services-picture .services-icons-content{background:#fff!important;border:1px solid var(--mobile-line)!important;border-radius:18px!important;padding:24px 16px 18px!important;box-shadow:0 8px 24px #223d2a0b!important}
+  .services-icons-fixed h2{font-size:clamp(19px,5.3vw,24px)!important;letter-spacing:-.04em;color:var(--mobile-ink)!important;margin-bottom:21px!important}
+  .services-icons-fixed .fixed-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:11px!important}
+  .services-icons-fixed .fixed-service-card,.services-icons-fixed .fixed-service-card:nth-child(n){background:#fff!important;border:1px solid #e8ebe7!important;border-radius:13px!important;min-height:125px!important;padding:16px 6px 12px!important;gap:10px!important;box-shadow:none!important}
+  .services-icons-fixed .fixed-service-card svg{width:43px!important;height:43px!important;stroke-width:2.6;overflow:hidden!important}
+  .services-icons-fixed .fixed-service-card strong{font-size:13px!important;letter-spacing:0!important;font-weight:800!important;color:#263a2e!important}
+  .services-icons-fixed .fixed-service-card:nth-child(1) svg{color:#32745a}
+  .services-icons-fixed .fixed-service-card:nth-child(2) svg{color:#427e99}
+  .services-icons-fixed .fixed-service-card:nth-child(3) svg{color:#997a47}
+  .services-icons-fixed .fixed-service-card:nth-child(4) svg{color:#8c7a95}
+  .services-icons-fixed .fixed-service-note{font-size:13px!important;line-height:1.55!important;letter-spacing:0!important;border-radius:10px!important;margin-top:15px!important;padding:12px!important;background:#f9f1d6!important;color:#594d32!important}
+  .about-clean{background:#fff!important;border:1px solid var(--mobile-line)!important;border-radius:18px!important;margin:16px 16px 27px!important;padding:23px 19px!important;box-shadow:0 8px 24px #223d2a0a!important}
+  .about-clean-heading{background:none!important;border:0!important;box-shadow:none!important;padding:0!important;color:var(--mobile-ink)!important;font-size:20px!important;margin:0 0 15px!important;gap:9px!important}
+  .about-clean-heading svg{color:var(--mobile-accent)!important;width:25px!important;height:25px!important;flex-basis:25px!important}
+  .about-clean-copy p{font-size:14px!important;line-height:1.95!important;margin:0 0 11px!important;color:#4b5c51!important}
+  .repair-illustration{margin:0 16px 26px!important}
+  .repair-illustration-mobile{background:none!important;box-shadow:none!important;border:0!important;padding:0!important}
+  .mobile-premium-heading{margin:28px 0 15px!important;text-align:left}
+  .mobile-premium-kicker{display:block;font-size:10px;letter-spacing:.14em;font-weight:800;color:#7d916f;margin-bottom:4px}
+  .mobile-premium-heading h2{font-size:23px;letter-spacing:-.035em;color:#25392e;margin:0 0 5px}
+  .mobile-premium-heading p{font-size:12px;color:#68756b;margin:0;line-height:1.55}
+  .mobile-premium-routes{display:grid;gap:11px}
+  .mobile-premium-route{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #e6eae4;border-radius:16px;padding:19px 16px;box-shadow:0 5px 16px #24352909}
+  .mobile-premium-route-icon{flex:0 0 47px;width:47px;height:47px;display:grid;place-items:center;background:#e8f3ed;color:#285f48;border-radius:13px}
+  .mobile-premium-route:nth-child(2) .mobile-premium-route-icon{background:#e9f1f8;color:#416c8b}
+  .mobile-premium-route-icon svg{width:27px;height:27px}
+  .mobile-premium-route h3{font-size:16px;font-weight:850;color:#293d30;margin:1px 0 6px}
+  .mobile-premium-route p{font-size:13px;color:#5a6b5e;line-height:1.75;margin:0}
+  .mobile-flow-heading{margin-top:31px!important}
+  .mobile-premium-steps{list-style:none;counter-reset:none;margin:0;padding:0 0 0 4px}
+  .mobile-premium-steps li{display:flex;gap:14px;position:relative;padding:6px 2px 23px}
+  .mobile-premium-steps li:not(:last-child):before{content:"";position:absolute;left:22px;top:47px;bottom:0;width:1px;background:#d7e5d9}
+  .premium-step-num{display:grid;place-items:center;flex:0 0 45px;width:45px;height:45px;border-radius:50%;background:#285f48;color:#fff;font-size:13px;font-weight:850;letter-spacing:.02em}
+  .mobile-premium-steps li h3{margin:1px 0 5px;font-size:16px;color:#283d2f}
+  .mobile-premium-steps li p{margin:0;color:#5a6b5e;font-size:13px;line-height:1.7}
+  .details{display:grid!important;grid-template-columns:1fr!important;gap:23px!important;padding:0 16px}
+  .details .detail-box,.details .detail-box:first-child,.details .detail-box:last-child{margin:16px 0 0!important;min-height:0!important;border-radius:16px!important;padding:38px 19px 21px!important;box-shadow:0 5px 16px #2435290a!important}
+  .details .detail-box:first-child{background:#fff!important;border:1px solid #e7e9e3!important}
+  .details .detail-box:last-child{background:#fff7db!important;border:1px solid #f1dfaa!important}
+  .details .detail-box .pill-title{left:14px!important;top:-18px!important;border-radius:10px!important;font-size:16px!important;padding:8px 15px!important;box-shadow:none!important;background:#f8d46b!important;color:#493b1b!important;border:0!important}
+  .detail-box strong{font-size:20px!important;letter-spacing:-.025em}
+  .detail-box p{font-size:13px!important;line-height:1.7!important}
+  .detail-box .small{font-size:11px!important}
+  .faq-box{margin:36px 16px 20px!important;border-radius:17px!important;border:1px solid #e7ebe5!important;padding:37px 13px 15px!important;background:#fff!important}
+  .faq-box .pill-title{left:14px!important;font-size:17px!important;background:#e8f0e9!important;color:#2e5842!important;border-radius:10px!important;padding:9px 14px!important}
+  .faq-box details{border:1px solid #eef0ed!important;border-radius:10px!important;margin:8px 0!important}
+  .faq-box summary{font-size:14px!important;line-height:1.5!important;padding:14px 12px!important}
+  .faq-box details p{font-size:13px!important;line-height:1.8!important}
+  .bottom-phone-panel{margin:24px 16px!important;padding:25px 17px 22px!important;border-radius:18px!important;background:#fff!important;border:1px solid #e5e9df!important;box-shadow:0 8px 22px #2435290d!important}
+  .bottom-phone-title{font-size:18px!important;color:#253a2e!important;margin-bottom:15px!important}
+  .bottom-phone-button{background:#ffcc49!important;color:#493610!important;border:0!important;border-radius:14px!important;box-shadow:0 5px 0 #dfa632,0 12px 20px #a9781621!important;padding:18px 8px!important;min-height:108px!important}
+  .bottom-phone-button .phone-cta-lead{font-size:15px!important}
+  .bottom-phone-button .phone-cta-number{font-size:clamp(25px,7vw,35px)!important;letter-spacing:-.015em!important}
+  .bottom-phone-hint{margin-top:16px!important;color:#748075!important;font-size:11px!important}
+  .cta-row{margin:22px 16px!important;gap:10px!important}
+  .cta-link{border-radius:11px!important;box-shadow:none!important}
+  .footnote{padding:0 19px!important;color:#78837a!important;font-size:11px!important;line-height:1.75!important}
+  .footer{background:#eef1ec!important;color:#5b6c5d!important;font-size:11px!important;padding:20px 12px!important}
+}
+
 </style>
 </head><body>
 <div class="page">
@@ -461,18 +541,24 @@ body{background:#fbfaf6}
 <section class="repair-illustration" aria-label="対応内容とご利用の流れ">
   <img class="repair-illustration-pc" src="visit-assets/repair_info_approved.png" alt="対応内容：現地での修理・引き取り修理。ご利用の流れ：1 ご相談・受付、2 訪問日時の確認、3 出張修理、4 修理・お支払い。" loading="lazy" decoding="async">
   <div class="repair-illustration-mobile" aria-label="対応内容とご利用の流れ（スマホ表示）">
-    <h2 class="mobile-section-heading">対応内容</h2>
-    <div class="mobile-route-cards">
-      <img src="visit-assets/mobile_route_on_site.png" alt="現地での修理：その場で対応できる修理は現地で作業します。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_route_pickup.png" alt="引き取り修理：現地での修理が難しい場合は、自転車をお預かりして工房で修理し、後日お届けします。" loading="lazy" decoding="async">
+    <div class="mobile-premium-heading"><span class="mobile-premium-kicker">OUR SERVICE</span><h2>対応内容</h2><p>修理内容に合わせて、最適な方法をご案内します。</p></div>
+    <div class="mobile-premium-routes">
+      <article class="mobile-premium-route">
+        <span class="mobile-premium-route-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M5 17l5-10 5 10H5m10 0 4-8h-6m-3-2h3m-3 0 3 10"/></svg></span>
+        <div><h3>現地での修理</h3><p>パンクや調整など、その場で対応できる修理は現地で作業します。</p></div>
+      </article>
+      <article class="mobile-premium-route">
+        <span class="mobile-premium-route-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="12" height="11" rx="1"/><path d="M14 10h4l4 4v3h-8M5 10h6"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span>
+        <div><h3>引き取り修理</h3><p>現地での作業が難しい場合は、工房で修理し、後日お届けします。</p></div>
+      </article>
     </div>
-    <h2 class="mobile-section-heading">ご利用の流れ</h2>
-    <div class="mobile-steps-cards">
-      <img src="visit-assets/mobile_step_1.png" alt="1 ご相談・受付：受付開始後に症状や訪問場所をお伺いします。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_step_2.png" alt="2 訪問日時の確認：日時・場所・作業内容と料金を確認します。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_step_3.png" alt="3 出張修理：ご指定の場所へ伺い修理します。必要に応じて引き取りにも対応します。" loading="lazy" decoding="async">
-      <img src="visit-assets/mobile_step_4.png" alt="4 修理・お支払い：状態と作業内容をご確認いただき、お支払いとなります。" loading="lazy" decoding="async">
-    </div>
+    <div class="mobile-premium-heading mobile-flow-heading"><span class="mobile-premium-kicker">HOW IT WORKS</span><h2>ご利用の流れ</h2><p>ご相談から修理完了まで、丁寧に対応します。</p></div>
+    <ol class="mobile-premium-steps">
+      <li><span class="premium-step-num">01</span><div><h3>ご相談・受付</h3><p>受付開始後に症状や訪問場所をお伺いします。</p></div></li>
+      <li><span class="premium-step-num">02</span><div><h3>訪問日時の確認</h3><p>日時・場所・作業内容と料金を事前に確認します。</p></div></li>
+      <li><span class="premium-step-num">03</span><div><h3>出張修理</h3><p>ご指定の場所へ伺います。必要に応じて引き取りにも対応します。</p></div></li>
+      <li><span class="premium-step-num">04</span><div><h3>修理・お支払い</h3><p>作業内容をご確認いただいてから、お支払いとなります。</p></div></li>
+    </ol>
   </div>
 </section>
 <div class="details"><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg> 対応エリア</h2><strong>高知市・南国市・香南市</strong><p>土佐市・香美市・芸西村・安芸市は<strong class="reservation-inline">要予約</strong>で対応します。</p><p class="small">※訪問日時・詳細な対応範囲はご依頼時にご案内します。</p></section><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 7 4 6 4-6m-4 6v5m-4-5h8m-8 3h8"/></svg> 出張料金</h2><strong>500円～</strong><p>出張料金は、修理工賃・部品代とは別にかかります。</p><p class="small">※訪問先や作業内容によって料金が異なります。作業前にご案内します。</p></section></div>
