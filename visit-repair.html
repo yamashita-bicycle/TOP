@@ -733,6 +733,113 @@ body{background:#fbfaf6}
   }
 }
 
+
+/* Smartphone-only: two full-width stacked panels, no price/title overlap */
+@media (max-width:700px){
+  .mobile-reference-root .ref-fee-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:12px!important;
+    padding:0!important;
+    background:transparent!important;
+    border:0!important;
+    border-radius:0!important;
+  }
+  .mobile-reference-root .ref-fee-card,
+  .mobile-reference-root .ref-fee-card + .ref-fee-card,
+  .mobile-reference-root .ref-fee-card:last-child{
+    display:block!important;
+    min-width:0!important;
+    width:100%!important;
+    padding:18px 18px 19px!important;
+    margin:0!important;
+    border:1.5px solid #edc84e!important;
+    border-radius:17px!important;
+    background:#fff3bc!important;
+    box-shadow:0 2px 9px #69501b12!important;
+    box-sizing:border-box!important;
+    text-align:left!important;
+  }
+  .mobile-reference-root .ref-fee-card h2,
+  .mobile-reference-root .ref-fee-card:last-child h2{
+    display:flex!important;
+    align-items:center!important;
+    gap:9px!important;
+    width:auto!important;
+    font-size:clamp(17px,4.8vw,21px)!important;
+    line-height:1.4!important;
+    margin:0 0 12px!important;
+    white-space:normal!important;
+  }
+  .mobile-reference-root .ref-fee-card > strong,
+  .mobile-reference-root .ref-fee-card:last-child > strong{
+    display:block!important;
+    width:auto!important;
+    margin:0 0 11px!important;
+    font-size:clamp(22px,6.5vw,29px)!important;
+    line-height:1.35!important;
+    letter-spacing:0!important;
+    text-align:left!important;
+    white-space:normal!important;
+    color:#30412b!important;
+  }
+  .mobile-reference-root .ref-fee-card:last-child > strong{
+    font-size:clamp(34px,9vw,43px)!important;
+    color:#805407!important;
+    white-space:nowrap!important;
+  }
+  .mobile-reference-root .ref-fee-card p,
+  .mobile-reference-root .ref-fee-card small{
+    display:block!important;
+    font-size:clamp(12px,3.6vw,15px)!important;
+    line-height:1.65!important;
+    margin:0 0 6px!important;
+    overflow-wrap:anywhere!important;
+  }
+  .mobile-reference-root .ref-fee-card small{font-size:clamp(11px,3.2vw,13px)!important;margin-bottom:0!important;}
+}
+
+
+/* 2026-11-18: mobile fee amount beside the heading, never overlapping it. */
+@media (max-width:700px){
+  .mobile-reference-root .ref-fee-card:last-child{
+    display:grid!important;
+    grid-template-columns:minmax(110px, 37%) minmax(0,1fr)!important;
+    grid-template-areas:"heading amount" "description description" "note note"!important;
+    column-gap:8px!important;
+    row-gap:7px!important;
+    align-items:center!important;
+  }
+  .mobile-reference-root .ref-fee-card:last-child h2{
+    grid-area:heading!important;
+    min-width:0!important;
+    margin:0!important;
+    font-size:clamp(15px,4.1vw,20px)!important;
+    white-space:nowrap!important;
+    align-self:center!important;
+  }
+  .mobile-reference-root .ref-fee-card:last-child h2 svg{width:20px!important;height:20px!important;flex:0 0 20px!important}
+  .mobile-reference-root .ref-fee-card:last-child > strong{
+    grid-area:amount!important;
+    justify-self:start!important;
+    align-self:center!important;
+    min-width:0!important;
+    width:auto!important;
+    margin:0!important;
+    font-size:clamp(31px,9vw,48px)!important;
+    line-height:1.12!important;
+    font-weight:950!important;
+    color:#805407!important;
+    white-space:nowrap!important;
+    letter-spacing:-.045em!important;
+  }
+  .mobile-reference-root .ref-fee-card:last-child p{
+    grid-area:description!important;
+    margin:7px 0 0!important;
+  }
+  .mobile-reference-root .ref-fee-card:last-child small{grid-area:note!important;margin:0!important}
+}
+
 </style>
 </head><body>
 <div class="page">
