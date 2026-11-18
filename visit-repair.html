@@ -381,6 +381,23 @@ body{background:#fbfaf6}
  .services-picture .mobile-services-tile svg{max-width:36px}
 }
 
+
+/* 出張料金カードも黄色で統一 */
+.details .detail-box:last-child{background:#fff2b5!important;border:2px solid #f0cf65!important;box-shadow:0 4px 14px #b1872020!important}
+.details .detail-box:last-child strong{color:#62430d!important}
+.details .detail-box:last-child p{color:#514526!important}
+.details .detail-box:last-child .small{color:#6d603e!important}
+/* 下部の電話は明るいイエローオレンジと大きな番号で目立たせる */
+.bottom-phone-panel{background:#fff7db!important;border:2px solid #f3d27a!important;padding:23px 16px 25px!important}
+.bottom-phone-title{font-size:clamp(18px,2.1vw,23px)!important;color:#604512!important}
+.bottom-phone-button{background:#ffc340!important;color:#43300e!important;border:2px solid #eba521!important;box-shadow:0 5px 0 #dc9820,0 9px 20px #bd8a2c30!important;display:flex!important;flex-direction:column!important;gap:5px!important;width:min(100%,480px)!important;margin:0 auto!important;padding:16px 10px 17px!important;border-radius:18px!important;text-align:center!important;text-decoration:none!important;min-height:110px!important;box-sizing:border-box!important;transition:background .15s,transform .15s!important}
+.bottom-phone-button:hover,.bottom-phone-button:focus-visible{background:#ffdb70!important;transform:translateY(-2px)!important}
+.bottom-phone-button .phone-cta-lead{display:flex;align-items:center;justify-content:center;gap:8px;font-size:clamp(16px,3.6vw,20px);font-weight:900;line-height:1.3}
+.bottom-phone-button .phone-cta-lead svg{width:23px;height:23px;flex:none}
+.bottom-phone-button .phone-cta-number{display:block;font-size:clamp(26px,6vw,39px);font-weight:950;letter-spacing:.015em;line-height:1.22;white-space:nowrap;font-variant-numeric:tabular-nums}
+.bottom-phone-hint{font-size:13px!important;color:#715927!important}
+@media(max-width:360px){.bottom-phone-panel{margin-left:10px!important;margin-right:10px!important}.bottom-phone-button .phone-cta-number{font-size:26px}}
+
 </style>
 </head><body>
 <div class="page">
@@ -428,7 +445,7 @@ body{background:#fbfaf6}
 </section>
 <div class="details"><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15M15 6v15"/></svg> 対応エリア</h2><strong>高知市・南国市・香南市</strong><p>土佐市・香美市・芸西村・安芸市は<strong class="reservation-inline">要予約</strong>で対応します。</p><p class="small">※訪問日時・詳細な対応範囲はご依頼時にご案内します。</p></section><section class="detail-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 7 4 6 4-6m-4 6v5m-4-5h8m-8 3h8"/></svg> 出張料金</h2><strong>500円～</strong><p>出張料金は、修理工賃・部品代とは別にかかります。</p><p class="small">※訪問先や作業内容によって料金が異なります。作業前にご案内します。</p></section></div>
 <section class="faq-box"><h2 class="pill-title"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 3-3 2-3 5m0 3h.01"/></svg> よくあるご質問</h2><details><summary>どんな修理ができますか？</summary><p>パンク修理・ブレーキ調整・チェーン調整などに対応します。現地での修理が難しい場合は、お預かりして工房で修理します。</p></details><details><summary>事前予約は必要ですか？</summary><p>通常の出張修理は事前にご相談ください。外出先での故障などお急ぎの場合は、できるだけ早く現地へお伺いし、修理できるよう対応します。ただし、訪問状況や場所によってはお時間をいただく場合があります。店舗へのご来店は予約不要です。</p></details><details><summary>出張料金はいくらですか？</summary><p>出張料金は500円からです。修理工賃・部品代とは別にかかり、訪問先や作業内容によって異なります。作業前に料金をご案内します。</p></details></section>
-<section class="bottom-phone-panel" aria-label="お電話でのお問い合わせ"><p class="bottom-phone-title">お電話でのお問い合わせ</p><a class="bottom-phone-button" href="tel:07047817655" aria-label="070-4781-7655 に電話をかける"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.35 1.78.68 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.29a2 2 0 0 1 2.11-.45c.84.33 1.72.56 2.62.68A2 2 0 0 1 22 16.92z"/></svg>070-4781-7655</a><p class="bottom-phone-hint">番号をタップすると電話をかけられます</p></section>
+<section class="bottom-phone-panel" aria-label="お電話でのお問い合わせ"><p class="bottom-phone-title">お電話でのお問い合わせ</p><a class="bottom-phone-button" href="tel:07047817655" aria-label="070-4781-7655 に電話をかける"><span class="phone-cta-lead"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.35 1.78.68 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.29a2 2 0 0 1 2.11-.45c.84.33 1.72.56 2.62.68A2 2 0 0 1 22 16.92z"/></svg> タップして電話する</span><span class="phone-cta-number">070-4781-7655</span></a><p class="bottom-phone-hint">番号をタップすると電話をかけられます</p></section>
 <div class="cta-row"><a class="cta-link main-link" href="https://yamashita-bicycle.github.io/TOP/"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 9-8 9 8v10H3z"/><path d="M9 21v-8h6v8"/></svg> 公式HPへ戻る</a><a class="cta-link" href="https://yamashita-bicycle.github.io/TOP/#news"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></svg> 最新のお知らせを見る</a></div>
 <p class="footnote">※掲載している車両・出張修理風景はイメージです。出張修理は受付開始に向けて準備中です。詳細な対応範囲やご依頼方法は受付時にご案内します。</p>
 <footer class="footer">© やました自転車工房｜高知市高須</footer>
