@@ -398,6 +398,29 @@ body{background:#fbfaf6}
 .bottom-phone-hint{font-size:13px!important;color:#715927!important}
 @media(max-width:360px){.bottom-phone-panel{margin-left:10px!important;margin-right:10px!important}.bottom-phone-button .phone-cta-number{font-size:26px}}
 
+
+/* Self-contained, font-independent vector icons; same rendering on desktop and mobile */
+.services-icons-fixed{max-width:1320px;margin:26px auto;padding:0 18px}
+.services-icons-fixed .services-icons-content{background:#fff;border:1px solid #e8e1d3;border-radius:18px;box-shadow:0 5px 19px #222a2010;padding:24px 22px 22px}
+.services-icons-fixed h2{text-align:center;color:#2c4d3a;font-size:clamp(21px,2.7vw,34px);margin:0 0 20px;line-height:1.35;font-weight:900}
+.services-icons-fixed .fixed-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.services-icons-fixed .fixed-service-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;min-width:0;min-height:142px;padding:14px 6px;border-radius:14px;border:1px solid #eadfc9;background:#fff8e9;color:#4c694f;text-align:center;box-sizing:border-box}
+.services-icons-fixed .fixed-service-card:nth-child(2){background:#edf7fd;border-color:#d2e7f5;color:#3d7191}
+.services-icons-fixed .fixed-service-card:nth-child(3){background:#f3f8ec;border-color:#e0ebd5;color:#637849}
+.services-icons-fixed .fixed-service-card:nth-child(4){background:#fff0ef;border-color:#f1dcd8;color:#a3655b}
+.services-icons-fixed .fixed-service-card svg{display:block;width:clamp(38px,5vw,62px);height:clamp(38px,5vw,62px);flex:none;overflow:visible;stroke:currentColor}
+.services-icons-fixed .fixed-service-card strong{font-size:clamp(13px,1.5vw,18px);line-height:1.4;white-space:nowrap;font-weight:800;color:#304336}
+.services-icons-fixed .fixed-service-note{margin:20px auto 0;padding:13px 18px;max-width:700px;background:#ffe468;border-radius:99px;text-align:center;color:#4f4017;font-weight:800;font-size:clamp(14px,1.8vw,19px);line-height:1.4}
+@media(max-width:700px){
+.services-icons-fixed{margin:18px 8px;padding:0}
+.services-icons-fixed .services-icons-content{padding:16px 9px 17px}
+.services-icons-fixed h2{font-size:clamp(18px,4.5vw,24px);margin-bottom:13px}
+.services-icons-fixed .fixed-service-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+.services-icons-fixed .fixed-service-card{min-height:91px;gap:7px;padding:9px 2px;border-radius:9px}
+.services-icons-fixed .fixed-service-card svg{width:clamp(27px,8vw,41px);height:clamp(27px,8vw,41px)}
+.services-icons-fixed .fixed-service-card strong{font-size:clamp(9px,2.7vw,12px);white-space:nowrap;letter-spacing:-.04em}
+.services-icons-fixed .fixed-service-note{margin-top:13px;padding:11px 6px;font-size:clamp(12px,3.1vw,16px)}
+}
 </style>
 </head><body>
 <div class="page">
@@ -405,18 +428,15 @@ body{background:#fbfaf6}
 <header class="header"><a class="brand" href="https://yamashita-bicycle.github.io/TOP/"><img class="brand-logo" src="visit-assets/logo.png" alt=""><span class="brand-text"><b>やました自転車工房</b><small>Yamashita Bicycle Workshop</small></span></a><div class="header-actions"><a class="call-link-top" href="tel:07047817655" aria-label="電話する 070-4781-7655"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.35 1.78.68 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.29a2 2 0 0 1 2.11-.45c.84.33 1.72.56 2.62.68A2 2 0 0 1 22 16.92z"/></svg><span class="call-text-top">電話する</span><span class="phone-number-top">070-4781-7655</span></a></div></header>
 <section class="hero-approved" aria-label="出張修理やってます！"><img src="visit-assets/visit_hero_no_indy_crisp.png" alt="出張修理やってます！ いつもの修理を、いつもの場所で。やました自転車工房の車両と自転車、修理工具のイメージ" loading="eager" fetchpriority="high"></section>
 <div class="status-note">※出張修理は開業準備中です。受付開始後にご案内します。</div>
-<section class="services-picture" aria-label="こんな時にご利用ください！">
-<img class="services-picture-desktop" src="visit-assets/services_banner_approved_v2.png" alt="こんな時にご利用ください！ パンク修理、ブレーキ調整、チェーン調整、その他の修理。持ち込みが難しい自転車もご相談ください！" loading="lazy" decoding="async">
-<div class="services-picture-mobile" aria-label="出張修理のご相談例">
-  <div class="mobile-services-heading">＼ こんな時にご利用ください！ ／</div>
-  <div class="mobile-services-grid">
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="4"/><path d="M24 7v13M24 28v13M7 24h13M28 24h13M12 12l9 9m6 6 9 9m0-24-9 9m-6 6-9 9"/></svg><b>パンク修理</b></div>
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="7"/><path d="M24 8v9m0 14v9M8 24h9m14 0h9"/><path d="M6 14h7v20H6M35 14h7v20h-7"/></svg><b>ブレーキ調整</b></div>
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="16" width="26" height="16" rx="8" transform="rotate(-35 16 24)"/><rect x="19" y="16" width="26" height="16" rx="8" transform="rotate(-35 32 24)"/><path d="M19 26l10-7"/></svg><b>チェーン調整</b></div>
-    <div class="mobile-services-tile"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 7a10 10 0 0 0 12 12L39 36l-5 5-17-17A10 10 0 0 1 10 7Z"/><path d="M30 13l6-6 5 5-6 6M22 26l-13 13"/></svg><b>その他の修理</b></div>
+<section class="services-picture services-icons-fixed" aria-label="こんな時にご利用ください！">
+  <div class="services-icons-content">
+    <h2>こんな時にご利用ください！</h2>
+    <div class="fixed-service-grid"><div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="パンク修理"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="12"/><path d="M32 10v10M32 44v10M10 32h10M44 32h10"/><path d="M43 14l7-7M45 7h5v5"/></svg><strong>パンク修理</strong></div>
+<div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="ブレーキ調整"><path d="M11 20h42M18 20v16M46 20v16"/><path d="M18 36c0 9 5 15 14 15s14-6 14-15"/><path d="M11 14h12M41 14h12"/><path d="M24 20l-6-8M40 20l6-8"/></svg><strong>ブレーキ調整</strong></div>
+<div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="チェーン調整"><rect x="7" y="18" width="34" height="19" rx="9.5" transform="rotate(-30 24 28)"/><rect x="23" y="27" width="34" height="19" rx="9.5" transform="rotate(-30 40 37)"/><path d="M26 34l12-7"/></svg><strong>チェーン調整</strong></div>
+<div class="fixed-service-card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="その他の修理"><path d="M22 10a14 14 0 0 0 17 17L54 42l-12 12-15-15A14 14 0 0 1 10 22l10 10 10-10-10-10Z"/></svg><strong>その他の修理</strong></div></div>
+    <p class="fixed-service-note">持ち込みが難しい自転車もご相談ください！</p>
   </div>
-  <p class="mobile-services-note">持ち込みが難しい自転車もご相談ください！</p>
-</div>
 </section>
 <section class="about-clean" aria-labelledby="about-visit-heading">
 <h2 class="about-clean-heading" id="about-visit-heading"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="13" height="9" rx="1.3"/><path d="M15 11h3l4 4v2h-7"/><circle cx="7" cy="18" r="2"/><circle cx="18.5" cy="18" r="2"/><path d="M5 12h7"/></svg><span>出張修理について</span></h2>
