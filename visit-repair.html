@@ -159,6 +159,22 @@
  .services-mobile-grid img{width:100%;background:white;border-radius:10px}
  .services-mobile-note{width:82%;max-width:340px!important;margin:11px auto 0}
 }
+
+/* Smartphone-only 2026-11-18 layout update: approved hero and About remain untouched. */
+@media(max-width:700px){
+  .services-picture{margin:20px 9px 26px;padding:0}
+  .services-picture-mobile{display:block;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
+  .services-picture-mobile .mobile-service-strip{display:block;width:100%;height:auto;object-fit:contain;margin:0;border-radius:13px;box-shadow:0 3px 12px #22483118}
+  .repair-illustration{margin:20px auto 26px;padding:0 10px}
+  .repair-illustration-mobile{display:block}
+  .repair-illustration-mobile .mobile-section-heading{font-size:23px;font-weight:900;color:#054d2f;text-align:center;margin:18px 0 12px;line-height:1.3}
+  .mobile-route-cards,.mobile-steps-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  .mobile-route-cards img,.mobile-steps-cards img{display:block;width:100%;height:auto;max-width:100%;border:0;border-radius:12px;box-shadow:0 2px 10px #234b3217;object-fit:contain;background:white}
+  .mobile-steps-cards{gap:5px}
+  .details{gap:12px}
+  .details .detail-box{min-width:0}
+  .faq-box{margin-top:24px}
+}
 </style>
 </head><body>
 <div class="page">
@@ -169,14 +185,7 @@
 <section class="services-picture" aria-label="こんな時にご利用ください！">
 <img class="services-picture-desktop" src="visit-assets/services_banner_approved_v2.png" alt="こんな時にご利用ください！ パンク修理、ブレーキ調整、チェーン調整、その他の修理。持ち込みが難しい自転車もご相談ください！" loading="lazy" decoding="async">
 <div class="services-picture-mobile" aria-label="出張修理のご相談例">
-<img class="services-mobile-heading" src="visit-assets/services_banner_title_v2.png" alt="こんな時にご利用ください！" loading="lazy">
-<div class="services-mobile-grid">
-<img src="visit-assets/services_banner_mobile_1_v2.png" alt="パンク修理" loading="lazy">
-<img src="visit-assets/services_banner_mobile_2_v2.png" alt="ブレーキ調整" loading="lazy">
-<img src="visit-assets/services_banner_mobile_3_v2.png" alt="チェーン調整" loading="lazy">
-<img src="visit-assets/services_banner_mobile_4_v2.png" alt="その他の修理" loading="lazy">
-</div>
-<img class="services-mobile-note" src="visit-assets/services_banner_mobile_5_v2.png" alt="持ち込みが難しい自転車もご相談ください！" loading="lazy">
+  <img class="mobile-service-strip" src="visit-assets/service_mobile_one_row.png" alt="こんな時にご利用ください！ パンク修理、ブレーキ調整、チェーン調整、その他の修理。持ち込みが難しい自転車もご相談ください！" loading="lazy" decoding="async">
 </div>
 </section>
 <section class="about-clean" aria-labelledby="about-visit-heading">
@@ -193,17 +202,17 @@
 <section class="repair-illustration" aria-label="対応内容とご利用の流れ">
   <img class="repair-illustration-pc" src="visit-assets/repair_info_approved.png" alt="対応内容：現地での修理・引き取り修理。ご利用の流れ：1 ご相談・受付、2 訪問日時の確認、3 出張修理、4 修理・お支払い。" loading="lazy" decoding="async">
   <div class="repair-illustration-mobile" aria-label="対応内容とご利用の流れ（スマホ表示）">
-    <h2>対応内容</h2>
-    <div class="repair-route-image-grid">
-      <img src="visit-assets/repair_info_route_left.png" alt="現地での修理：その場で対応できる修理は現地で作業します" loading="lazy">
-      <img src="visit-assets/repair_info_route_right.png" alt="引き取り修理：現地で難しい修理は工房で修理してお届けします" loading="lazy">
+    <h2 class="mobile-section-heading">対応内容</h2>
+    <div class="mobile-route-cards">
+      <img src="visit-assets/mobile_route_on_site.png" alt="現地での修理：その場で対応できる修理は現地で作業します。" loading="lazy" decoding="async">
+      <img src="visit-assets/mobile_route_pickup.png" alt="引き取り修理：現地での修理が難しい場合は、自転車をお預かりして工房で修理し、後日お届けします。" loading="lazy" decoding="async">
     </div>
-    <h2>ご利用の流れ</h2>
-    <div class="repair-steps-image-grid">
-      <img src="visit-assets/repair_info_step_1.png" alt="1 ご相談・受付：自転車の症状と訪問場所をお伺いします" loading="lazy">
-      <img src="visit-assets/repair_info_step_2.png" alt="2 訪問日時の確認：日時・場所・作業内容と料金を確認します" loading="lazy">
-      <img src="visit-assets/repair_info_step_3.png" alt="3 出張修理：指定の場所へ伺い修理します。引き取りにも対応します" loading="lazy">
-      <img src="visit-assets/repair_info_step_4.png" alt="4 修理・お支払い：作業内容をご確認のうえお支払い" loading="lazy">
+    <h2 class="mobile-section-heading">ご利用の流れ</h2>
+    <div class="mobile-steps-cards">
+      <img src="visit-assets/mobile_step_1.png" alt="1 ご相談・受付：受付開始後に症状や訪問場所をお伺いします。" loading="lazy" decoding="async">
+      <img src="visit-assets/mobile_step_2.png" alt="2 訪問日時の確認：日時・場所・作業内容と料金を確認します。" loading="lazy" decoding="async">
+      <img src="visit-assets/mobile_step_3.png" alt="3 出張修理：ご指定の場所へ伺い修理します。必要に応じて引き取りにも対応します。" loading="lazy" decoding="async">
+      <img src="visit-assets/mobile_step_4.png" alt="4 修理・お支払い：状態と作業内容をご確認いただき、お支払いとなります。" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
