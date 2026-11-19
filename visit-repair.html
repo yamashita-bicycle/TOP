@@ -992,6 +992,21 @@ body{background:#fbfaf6}
 .ref-services-banner-img{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;max-width:100%!important;border:0!important;}
 .ref-services-banner .ref-service-hint{margin:5px 0 0!important;text-align:center!important;}
 }
+
+/* Smartphone only: prominent guidance immediately below the approved service banner. */
+@media (max-width:700px){
+  .mobile-reference-root .ref-services-banner .ref-services-banner-img{
+    display:block!important;width:100%!important;height:auto!important;margin:0!important;
+  }
+  .mobile-reference-root .ref-services-banner .ref-service-hint{
+    display:block!important;text-align:center!important;
+    margin:0!important;padding:4px 5px 10px!important;
+    color:#164d39!important;font-weight:800!important;
+    font-size:clamp(15px,4.1vw,19px)!important;
+    line-height:1.55!important;letter-spacing:-.025em!important;
+    border:0!important;background:transparent!important;
+  }
+}
 </style>
 </head><body>
 <div class="page">
@@ -1032,7 +1047,7 @@ body{background:#fbfaf6}
   <main>
     <section class="ref-hero"><img src="visit-assets/visit_hero_no_indy_crisp.png" alt="出張修理やってます！ いつもの修理をいつもの場所で。" /></section>
     <p class="ref-status">開業準備中｜出張修理の受付・料金は現在準備中です</p>
-    <section class="ref-services ref-services-banner" id="ref-services" aria-label="こんな時にご利用ください"><img class="ref-services-banner-img" src="visit-assets/mobile_service_banner_adopted.png" alt="こんな時にご利用ください：パンクしてしまった、ブレーキの効きが悪い、チェーンの調子が悪い、その他修理" width="1267" height="750" loading="lazy" decoding="async"><p class="ref-service-hint">持ち込みが難しい自転車も、お気軽にご相談ください</p></section>
+    <section class="ref-services ref-services-banner" id="ref-services" aria-label="こんな時にご利用ください"><img class="ref-services-banner-img" src="visit-assets/mobile_service_banner_adopted.png" alt="こんな時にご利用ください：パンクしてしまった、ブレーキの効きが悪い、チェーンの調子が悪い、その他修理" width="1267" height="750" loading="lazy" decoding="async"><p class="ref-service-hint">お持ち込みが難しい自転車も、お気軽にご相談ください</p></section>
     <details class="ref-expand"><summary><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 4 8 8-8 8"/></svg><span>対応内容・ご利用の流れを見る</span></summary><div class="ref-expand-content"><h3>対応内容</h3><p>パンクや調整など、その場で対応できる修理は現地で作業します。難しい場合は工房に引き取り、修理して後日お届けします。</p><h3>ご利用の流れ</h3><ol><li><span class="ref-step-no">1</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16.7v3a2 2 0 0 1-2.2 2 19.6 19.6 0 0 1-8.6-3.1 19.6 19.6 0 0 1-6-6A19.6 19.6 0 0 1 1.1 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 1.7l.6 2.5a2 2 0 0 1-.5 2.1L7 9.6a15.2 15.2 0 0 0 6.4 6.4l1.3-1.2a2 2 0 0 1 2.1-.5l2.5.6a2 2 0 0 1 1.7 2.2Z"/></svg><div><strong>ご相談・受付</strong><p>受付開始後、症状や訪問場所をお伺いします。</p></div></li><li><span class="ref-step-no">2</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-14 4h3m4 0h3"/></svg><div><strong>訪問日時の確認</strong><p>日時・場所・作業内容と料金をご案内します。</p></div></li><li><span class="ref-step-no">3</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 7a5.4 5.4 0 0 1-7.1 7.1L6.3 21a2.3 2.3 0 0 1-3.3-3.3l7.1-7.1A5.4 5.4 0 0 1 17 3.5L13 7.5l3.5 3.5Z"/></svg><div><strong>出張修理</strong><p>ご指定の場所へ伺い修理します。必要に応じて引き取りにも対応します。</p></div></li><li><span class="ref-step-no">4</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20m-16 5h6"/></svg><div><strong>修理・お支払い</strong><p>状態と作業内容をご確認いただき、お支払いとなります。</p></div></li></ol></div></details>
     <div class="ref-fee-grid" id="ref-fees"><section class="ref-fee-card ref-pop-area"><img class="ref-pop-art" src="visit-assets/pop_area_map.webp" alt="" aria-hidden="true" loading="lazy"><h2><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.2 9 3l6 2.2L21 3v15.8L15 21l-6-2.2L3 21zM9 3v15.8M15 5.2V21"/></svg>対応エリア</h2><strong>高知市・南国市・香南市</strong><p>土佐市・香美市・芸西村・安芸市は<strong class="ref-required">要予約</strong>で対応します。</p><small>※訪問日時・詳細な対応範囲はご依頼時にご案内します。</small></section><section class="ref-fee-card ref-pop-price"><img class="ref-pop-art" src="visit-assets/pop_fee_coins.webp" alt="" aria-hidden="true" loading="lazy"><h2><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 6 4 6 4-6m-4 6v6m-5-6h10m-10 3h10"/></svg>出張料金</h2><strong>500円～</strong><p>出張料金は、修理工賃・部品代とは別にかかります。</p><small>※訪問先や作業内容によって料金が異なります。作業前にご案内します。</small></section></div>
     <section class="ref-faq" id="ref-questions"><h2><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9 9a3 3 0 1 1 4.4 2.7c-1 .6-1.4 1.1-1.4 2.7M12 17.3h.01"/></svg>よくあるご質問</h2><div class="ref-faq-items"><details><summary>どんな修理ができますか？</summary><p>パンク修理・ブレーキ調整・チェーン調整などに対応します。現地での修理が難しい場合は、お預かりして工房で修理します。</p></details><details><summary>事前予約は必要ですか？</summary><p>通常の出張修理は事前にご相談ください。急な故障も可能な範囲で対応します。店舗へのご来店は予約不要です。</p></details><details><summary>出張料金はいくらですか？</summary><p>500円からです。修理工賃・部品代は別途かかり、訪問先や作業内容によって異なります。作業前にご案内します。</p></details></div></section>
