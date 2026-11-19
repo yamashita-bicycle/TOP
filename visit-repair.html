@@ -1027,6 +1027,20 @@ body{background:#fbfaf6}
   }
 }
 
+
+/* Only the bottom phone number on smartphone: bold, clean figures */
+@media (max-width:700px){
+ .mobile-reference-root .ref-phone-number{
+   font-family:"Arial Black","Helvetica Neue",Arial,sans-serif !important;
+   font-weight:900 !important;
+   font-size:clamp(28px,8.3vw,43px) !important;
+   letter-spacing:.015em !important;
+   line-height:1.2 !important;
+   font-variant-numeric:tabular-nums lining-nums !important;
+   text-shadow:0 1px 0 #ffffff80;
+ }
+}
+
 </style>
 </head><body>
 <div class="page">
